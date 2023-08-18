@@ -50,3 +50,21 @@ function calculateParallelogramArea() {
     const parallelogramAreaField = document.getElementById('parallelogram-area');
     parallelogramAreaField.innerText = area;
 }
+
+
+function calculateEllipseArea() {
+    const ellipseMajorRadiusField = document.getElementById('ellipse-major-radius');
+    const ellipseMajorRadiusFieldString = ellipseMajorRadiusField.value;
+    const majorRadius = parseFloat(ellipseMajorRadiusFieldString);
+    console.log(majorRadius);
+
+    const ellipseMinorRadiusField = document.getElementById('ellipse-minor-radius');
+    const ellipseMinorRadiusFieldString = ellipseMinorRadiusField.value;
+    const minorRadius = parseFloat(ellipseMinorRadiusFieldString);
+    console.log(minorRadius);
+
+    const area = 3.1416 * majorRadius * minorRadius;
+
+    const EllipseAreaField = document.getElementById('ellipse-area');
+    EllipseAreaField.innerText = area;
+}
