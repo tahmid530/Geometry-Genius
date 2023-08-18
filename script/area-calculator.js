@@ -94,7 +94,7 @@ function calculatePentagonArea() {
 
     const area = 0.5 * perimeter * apothem;
 
-    const ellipseAreaField = document.getElementById('ellipse-area');
-    ellipseAreaField.innerText = area;
+    const pentagonAreaField = document.getElementById('pentagon-area');
+    pentagonAreaField.innerText = area;
 
 }
