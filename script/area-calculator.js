@@ -49,6 +49,7 @@ function calculateParallelogramArea() {
 
     const parallelogramAreaField = document.getElementById('parallelogram-area');
     parallelogramAreaField.innerText = area;
+
 }
 
 
@@ -67,4 +68,24 @@ function calculateEllipseArea() {
 
     const EllipseAreaField = document.getElementById('ellipse-area');
     EllipseAreaField.innerText = area;
+
+}
+
+
+function calculateRhombusArea() {
+    const rhombusDiagonals1Field = document.getElementById('rhombus-diagonals-1');
+    const rhombusDiagonals1String = rhombusDiagonals1Field.value;
+    const rhombusDiagonals1 = parseFloat(rhombusDiagonals1String);
+    console.log(rhombusDiagonals1);
+
+    const rhombusDiagonals2Field = document.getElementById('rhombus-diagonals-2');
+    const rhombusDiagonals2String = rhombusDiagonals2Field.value;
+    const rhombusDiagonals2 = parseFloat(rhombusDiagonals2String);
+    console.log(rhombusDiagonals2);
+
+    const area = 0.5 * rhombusDiagonals1 * rhombusDiagonals2;
+
+    const rhombusAreaField = document.getElementById('rhombus-area');
+    rhombusAreaField.innerText = area;
+
 }
